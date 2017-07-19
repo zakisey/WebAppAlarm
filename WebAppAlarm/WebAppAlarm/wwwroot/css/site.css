@@ -1,4 +1,10 @@
-﻿body {
+﻿/* Google Webフォントを利用設定するCSSをインポート */
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
+
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -23,19 +29,6 @@ textarea {
     line-height: 1.4;
 }
 
-/* buttons and links extension to use brackets: [ click me ] */
-.btn-bracketed::before {
-    display: inline-block;
-    content: "[";
-    padding-right: 0.5em;
-}
-
-.btn-bracketed::after {
-    display: inline-block;
-    content: "]";
-    padding-left: 0.5em;
-}
-
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
     width: 100%;
@@ -47,4 +40,41 @@ textarea {
     .carousel-caption {
         display: none;
     }
+}
+
+#clock_frame {
+    font-size: 60px;
+    width: 100%;
+}
+
+#clock_date {
+    display: block;
+    font-size: 0.5em;
+    padding-right: 0.5em;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+#clock_time {
+    display: block;
+    font-size: 2em;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+input {
+    display: block;
+    color: black;
+}
+
+#inputUrl {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inputDate {
+    display: inline;
+    width: 50px;
+}
+
+#buttonSet {
+    color: black;
 }
