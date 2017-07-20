@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+<h2>@ViewData["Title"].</h2>
+
+<p>Welcome to the YouTube Alarm app!</p>
+
+<div>
+@Html.ActionLink(
+    "Log in",
+    "Login",
+    "Account"
+)
+</div>
+<div>
+@Html.ActionLink(
+    "Register",
+    "Register",
+    "Account"
+)
+</div>

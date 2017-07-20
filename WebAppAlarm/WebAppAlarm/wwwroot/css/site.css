@@ -2,9 +2,8 @@
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
 
 body {
-    text-align: center;
-    background-color: black;
-    color: white;
+//    background-color: black;
+//    color: white;
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -40,6 +39,10 @@ textarea {
     .carousel-caption {
         display: none;
     }
+}
+
+#wrapper {
+    text-align: center;
 }
 
 #clock_frame {

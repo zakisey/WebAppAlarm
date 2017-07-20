@@ -1,25 +1,25 @@
 ﻿@{
     ViewData["Title"] = "About";
 }
-
+<div id="wrapper">
     <!-- 時計枠 -->
-<div id="clock_frame">
-    <!-- 日付部分 -->
-    <span id="clock_date"></span>
-    <!-- 時刻部分 -->
-    <span id="clock_time"></span>
+    <div id="clock_frame">
+        <!-- 日付部分 -->
+        <span id="clock_date"></span>
+        <!-- 時刻部分 -->
+        <span id="clock_time"></span>
+    </div>
+    <div>
+        <div>Timer:</div>
+        <input class="inputDate" id="inputHour" maxlength="2" max="23" min="0" type="number" color="black" /><span>:</span>
+        <input class="inputDate" id="inputMinute" maxlength="2" max="59" min="0" type="number" color="black" /><span>:</span>
+        <input class="inputDate" id="inputSecond" maxlength="2" max="59" min="0" type="number" color="black" />
+        <div>YouTube URL:</div>
+        <input id="inputUrl" maxlength="100" type="text" value="https://www.youtube.com/watch?v=YJVmu6yttiw" color="black" />
+        <button id="buttonSet">Timer set</button>
+    </div>
+    <div id="player"></div>
 </div>
-<div>
-    <div>Timer:</div>
-    <input class="inputDate" id="inputHour" maxlength="2" max="23" min="0" type="number" color="black" /><span>:</span>
-    <input class="inputDate" id="inputMinute" maxlength="2" max="59" min="0" type="number" color="black" /><span>:</span>
-    <input class="inputDate" id="inputSecond" maxlength="2" max="59" min="0" type="number" color="black" />
-    <div>YouTube URL:</div>
-    <input id="inputUrl" maxlength="100" type="text" value="" color="black" />
-    <button id="buttonSet">set</button>
-</div>
-<div id="player"></div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="~/js/clock.js"></script>
 <script src="~/js/player.js"></script>
